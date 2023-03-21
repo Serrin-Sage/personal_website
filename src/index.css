@@ -1,1 +1,23 @@
+#root {
+    max-width: 1920px;
+    height: 100vh;
+    text-align: center;
+    
+}
+:root {
+    --bg-color: black;
+    --typewriterSpeed: 3s;
+}
 
+body {
+    background: var(--bg-color);
+    color: white;
+    font-family: monospace;
+    margin: 0;
+}
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
