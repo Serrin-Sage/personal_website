@@ -4,7 +4,7 @@ import App from './App'
 import './index.css'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-import './stylesheets/headerstyle.css'
+import './stylesheets/mainpage.scss'
 import './stylesheets/footerstyle.scss'
 
 

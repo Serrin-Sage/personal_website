@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    position: relative;
+    width: max-content;
+}
+
+.main-title::before,
+.main-title::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.main-title::before {
+    background: var(--bg-color);
+    animation:
+        typewriter var(--typewriterSpeed) steps(19) 1s forwards;
+}
+
+.main-title::after {
+    width: 0.2em;
+    background: white;
+    animation:
+        typewriter var(--typewriterSpeed) steps(19) 1s forwards,
+        blink 1s steps(19) infinite;
+}
+
+.subtitle {
+    opacity: 0;
+    transform: translateY(1rem);
+    animation: fadein 2s ease calc(var(--typewriterSpeed) + 1.3s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
