@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 
 .main-title {
     position: relative;
     width: max-content;
+    font-size: 40px;
 }
 
 .main-title::before,
@@ -33,10 +35,22 @@
         blink 1s steps(19) infinite;
 }
 
-.subtitle {
-    opacity: 0;
-    transform: translateY(1rem);
-    animation: fadein 2s ease calc(var(--typewriterSpeed) + 1.3s) forwards;
+.main-subtitles {
+    display: flex;
+    p {
+        margin: 0 1rem 0 1rem;
+        font-size: 16px;
+    }
+    .left-subtitle {
+        opacity: 0;
+        transform: translateX(-2rem);
+        animation: fadein 2s ease calc(var(--typewriterSpeed) + 1.3s) forwards;
+    }
+    .right-subtitle {
+        opacity: 0;
+        transform: translateX(2rem);
+        animation: fadein 2s ease calc(var(--typewriterSpeed) + 2.6s) forwards;
+    }
 }
 
 @keyframes typewriter {
@@ -54,6 +68,6 @@
 @keyframes fadein {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
