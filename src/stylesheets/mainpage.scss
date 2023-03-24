@@ -51,6 +51,19 @@
         transform: translateX(2rem);
         animation: fadein 2s ease calc(var(--typewriterSpeed) + 2.6s) forwards;
     }
+
+}
+
+.main-blurb {
+    width: 60%;
+    margin: 1rem;
+    font-size: 15px;
+
+    .blurb {
+        opacity: 0;
+        transform: translateY(1rem);
+        animation: fadeup 2s ease calc(var(--typewriterSpeed) + 3.9s) forwards;
+    }
 }
 
 @keyframes typewriter {
@@ -69,5 +82,12 @@
     to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes fadeup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
