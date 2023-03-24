@@ -44,12 +44,12 @@
     .left-subtitle {
         opacity: 0;
         transform: translateX(-2rem);
-        animation: fadein 2s ease calc(var(--typewriterSpeed) + 1.3s) forwards;
+        animation: fadein 1.5s ease calc(var(--typewriterSpeed) + 1.2s) forwards;
     }
     .right-subtitle {
         opacity: 0;
         transform: translateX(2rem);
-        animation: fadein 2s ease calc(var(--typewriterSpeed) + 2.6s) forwards;
+        animation: fadein 1.5s ease calc(var(--typewriterSpeed) + 1.8s) forwards;
     }
 
 }
@@ -62,7 +62,7 @@
     .blurb {
         opacity: 0;
         transform: translateY(1rem);
-        animation: fadeup 2s ease calc(var(--typewriterSpeed) + 3.9s) forwards;
+        animation: fadeup 2s ease calc(var(--typewriterSpeed) + 2.4s) forwards;
     }
 }
 
